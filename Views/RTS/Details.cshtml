@@ -1,0 +1,102 @@
+﻿@model WebApp6.Models.RTS
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>RTS</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.STAMPSTATUS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.STAMPSTATUS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EMPLOYEE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EMPLOYEE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EMPLOYEENAME)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EMPLOYEENAME)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SKILL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SKILL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ASSIGNEDDEPT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ASSIGNEDDEPT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ASSIGNEDCREW)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ASSIGNEDCREW)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AIRCRAFTTYPE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AIRCRAFTTYPE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ENGINETYPE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ENGINETYPE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BEGINDATE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BEGINDATE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ENDDATE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AUTHORIZATIONTYPE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AUTHORIZATIONTYPE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EMPLOYEESTATUS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EMPLOYEESTATUS)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

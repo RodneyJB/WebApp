@@ -1,0 +1,99 @@
+﻿@model WebApp6.Models.RTS
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>RTS</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="STAMPSTATUS" class="control-label"></label>
+                <input asp-for="STAMPSTATUS" class="form-control" />
+                <span asp-validation-for="STAMPSTATUS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdName" class="control-label"></label>
+                <input asp-for="IdName" class="form-control" />
+                <span asp-validation-for="IdName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EMPLOYEE" class="control-label"></label>
+                <input asp-for="EMPLOYEE" class="form-control" />
+                <span asp-validation-for="EMPLOYEE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EMPLOYEENAME" class="control-label"></label>
+                <input asp-for="EMPLOYEENAME" class="form-control" />
+                <span asp-validation-for="EMPLOYEENAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SKILL" class="control-label"></label>
+                <input asp-for="SKILL" class="form-control" />
+                <span asp-validation-for="SKILL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ASSIGNEDDEPT" class="control-label"></label>
+                <input asp-for="ASSIGNEDDEPT" class="form-control" />
+                <span asp-validation-for="ASSIGNEDDEPT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ASSIGNEDCREW" class="control-label"></label>
+                <input asp-for="ASSIGNEDCREW" class="form-control" />
+                <span asp-validation-for="ASSIGNEDCREW" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AIRCRAFTTYPE" class="control-label"></label>
+                <input asp-for="AIRCRAFTTYPE" class="form-control" />
+                <span asp-validation-for="AIRCRAFTTYPE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ENGINETYPE" class="control-label"></label>
+                <input asp-for="ENGINETYPE" class="form-control" />
+                <span asp-validation-for="ENGINETYPE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BEGINDATE" class="control-label"></label>
+                <input asp-for="BEGINDATE" class="form-control" />
+                <span asp-validation-for="BEGINDATE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ENDDATE" class="control-label"></label>
+                <input asp-for="ENDDATE" class="form-control" />
+                <span asp-validation-for="ENDDATE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AUTHORIZATIONTYPE" class="control-label"></label>
+                <input asp-for="AUTHORIZATIONTYPE" class="form-control" />
+                <span asp-validation-for="AUTHORIZATIONTYPE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="STAMP" class="control-label"></label>
+                <input asp-for="STAMP" class="form-control" />
+                <span asp-validation-for="STAMP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EMPLOYEESTATUS" class="control-label"></label>
+                <input asp-for="EMPLOYEESTATUS" class="form-control" />
+                <span asp-validation-for="EMPLOYEESTATUS" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,93 @@
+﻿@model IEnumerable<WebApp6.Models.RTS>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Select AUTHORIZATION TYPE!!!</h1>
+
+
+
+
+
+<form method="post">
+    <select name="AUTHORIZATIONTYPE">
+        <option value="BM">BM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="RUNUP_IDLE">RunUp IDLE</option>
+        <option value="RUNUP_FULL">RunUp FULL</option>
+    </select>
+    <input type="submit" value="RTS/filter" class="btn btn-danger" />
+</form>
+
+
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.IdName)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.SKILL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ASSIGNEDDEPT)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AIRCRAFTTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ENGINETYPE)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AUTHORIZATIONTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.STAMP)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.IdName)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.SKILL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ASSIGNEDDEPT)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AIRCRAFTTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ENGINETYPE)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AUTHORIZATIONTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+
+        </tr>
+        }
+    </tbody>
+</table>
